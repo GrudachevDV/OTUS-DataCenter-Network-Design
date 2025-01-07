@@ -31,27 +31,27 @@
 
 ## <a name="_toc187079729"></a>**Настройка глобальных параметров OSPF**
 
-router ospf 100			- запускаем процесс OSPF
+**router ospf 100**			- запускаем процесс OSPF
 
-router-id 172.16.0.201	- в качестве RID используем IP-адрес интерфейса Lo0, уникальный для каждого коммутатора
+**router-id 172.16.0.201**	- в качестве RID используем IP-адрес интерфейса Lo0, уникальный для каждого коммутатора
 
-passive-interface default		- по умолчанию все интерфейсы выключены из OSPF
+**passive-interface default**		- по умолчанию все интерфейсы выключены из OSPF
 
-no passive-interface Ethernet1	- включаем в процесс маршрутизации нужные интерфейсы
+**no passive-interface Ethernet1**	- включаем в процесс маршрутизации нужные интерфейсы
 
-no passive-interface Ethernet2
+**no passive-interface Ethernet2**
 
-no passive-interface Ethernet3
+**no passive-interface Ethernet3**
 
-log-adjacency-changes detail		- детальное логирование сообщений об изменениях соседства
+**log-adjacency-changes detail**		- детальное логирование сообщений об изменениях соседства
 
 ## <a name="_toc187079730"></a>**Настройка параметров интерфейсов OSPF**
 
-interface Ethernet1			- режим конфигурирования интерфейса
+**interface Ethernet1**			- режим конфигурирования интерфейса
 
-ip ospf network point-to-point	- тип сети указываем явно на PtP стыках коммутаторов
+**ip ospf network point-to-point**	- тип сети указываем явно на PtP стыках коммутаторов
 
-ip ospf area 0.0.0.0			- включаем интерфейс в нужную зону OSPF
+**ip ospf area 0.0.0.0**			- включаем интерфейс в нужную зону OSPF
 
 События в консоли коммутатора Spine-1:
 
@@ -284,15 +284,15 @@ leaf-2#
 
 Для настройки BFD на PtP интерфейсах выполнить команды:
 
-interface Ethernet1 – Ethernet3		- режим настройки интерфейсов
+**interface Ethernet1 – Ethernet3**		- режим настройки интерфейсов
 
-bfd interval 100 min-rx 100 multiplier 3		- настройка интервалов проверок связности между пирами и число неуспешных проверок для определения неработоспособности линка
+**bfd interval 100 min-rx 100 multiplier 3**		- настройка интервалов проверок связности между пирами и число неуспешных проверок для определения неработоспособности линка
 
-ip ospf neighbor bfd		- определение доступности OSPF-соседа в зависимости от состояния BFD
+**ip ospf neighbor bfd**		- определение доступности OSPF-соседа в зависимости от состояния BFD
 
 ## <a name="_toc187079733"></a>**Проверка BFD**
 
-Для проверки состояния BFD команда **sh bfd peer:**
+Для проверки состояния BFD команда **sh bfd peer**:
 
 ```
 spine-1#sh bfd peer
