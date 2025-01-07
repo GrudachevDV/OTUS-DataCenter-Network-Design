@@ -55,63 +55,63 @@ ip ospf area 0.0.0.0			- включаем интерфейс в нужную з�
 
 События в консоли коммутатора Spine-1:
 
-spine-1#Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from <DOWN> to <DOWN>
+spine-1#Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from DOWN to DOWN
 
-Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from <DOWN> to <INIT>
+Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from DOWN to INIT
 
-Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from <INIT> to <2 WAYS>
+Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from INIT to 2 WAYS
 
-Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from <2 WAYS> to <EXCH START>
+Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from 2 WAYS to EXCH START
 
-Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from <EXCH START> to <EXCHANGE>
+Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from EXCH START to EXCHANGE
 
-Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from <EXCHANGE> to <FULL>
+Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.2, intf 172.16.2.2 change from EXCHANGE to FULL
 
 Jan  6 11:44:32 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_ADJACENCY\_ESTABLISHED: NGB 172.16.0.2, interface 172.16.2.3 adjacency established
 
-Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from <DOWN> to <DOWN>
+Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from DOWN to DOWN
 
-Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from <DOWN> to <INIT>
+Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from DOWN to INIT
 
-Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from <INIT> to <2 WAYS>
+Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from INIT to 2 WAYS
 
-Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from <2 WAYS> to <EXCH START>
+Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from 2 WAYS to EXCH START
 
-Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from <EXCH START> to <EXCHANGE>
+Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from EXCH START to EXCHANGE
 
-Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from <EXCHANGE> to <FULL>
+Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.3, intf 172.16.2.4 change from EXCHANGE to FULL
 
 Jan  6 11:50:35 spine-1 Rib: Instance 100: %OSPF-4-OSPF\_ADJACENCY\_ESTABLISHED: NGB 172.16.0.3, interface 172.16.2.5 adjacency established
 
 События в консоли коммутатора Leaf-3:
 
-leaf-3#Jan  6 11:50:30 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from <DOWN> to <DOWN>
+leaf-3#Jan  6 11:50:30 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from DOWN to DOWN
 
-Jan  6 11:50:30 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from <DOWN> to <INIT>
+Jan  6 11:50:30 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from DOWN to INIT
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from <INIT> to <2 WAYS>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from INIT to 2 WAYS
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from <2 WAYS> to <EXCH START>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from 2 WAYS to EXCH START
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from <EXCH START> to <EXCHANGE>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from EXCH START to EXCHANGE
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from <EXCHANGE> to <LOADING>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from EXCHANGE to LOADING
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from <LOADING> to <FULL>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.201, intf 172.16.2.5 change from LOADING to FULL
 
 Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_ADJACENCY\_ESTABLISHED: NGB 172.16.0.201, interface 172.16.2.4 adjacency established
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from <DOWN> to <DOWN>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from DOWN to DOWN
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from <DOWN> to <INIT>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from DOWN to INIT
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from <INIT> to <2 WAYS>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from INIT to 2 WAYS
 
-Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from <2 WAYS> to <EXCH START>
+Jan  6 11:50:36 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from 2 WAYS to EXCH START
 
-Jan  6 11:50:41 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from <EXCH START> to <EXCHANGE>
+Jan  6 11:50:41 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from EXCH START to EXCHANGE
 
-Jan  6 11:50:41 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from <EXCHANGE> to <FULL>
+Jan  6 11:50:41 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_STATE\_CHANGE: NGB 172.16.0.202, intf 172.16.2.37 change from EXCHANGE to FULL
 
 Jan  6 11:50:41 leaf-3 Rib: Instance 100: %OSPF-4-OSPF\_ADJACENCY\_ESTABLISHED: NGB 172.16.0.202, interface 172.16.2.36 adjacency established
 
